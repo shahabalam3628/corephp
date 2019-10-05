@@ -1,0 +1,127 @@
+<html>
+<head>
+<script type="text/javascript" 
+src="Scripts/jquery.js">
+</script>
+<script type="text/javascript" 
+src="Scripts/jquery.validate.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#form1").validate({
+	    rules:{
+					username:"required",
+					password:"required",
+					repassword:
+					{
+					required:true,
+					equalTo:"#pass"
+					},
+					email:
+					{
+					required:true,
+					email:true
+					},
+					number:
+					{
+					required:true,
+					number:true,
+					minlength:10,
+					maxlength:10
+					},
+					age:
+					{
+					required:true,
+					range:[20,30]
+					},
+					quali:
+					{
+					required:true 
+
+					},
+					txtdate:{
+					required:true,
+					date:true 
+					}
+
+
+							},
+		messages:
+				{
+				username:"Must enter Username",
+				password:"Must enter password",
+				repassword:
+				{
+				required:"Pls enter RePassword",
+				equalTo:"Pls enter SamePassword"
+				},
+				email:
+				{
+				required:"Pls enter email id",
+				email:"Pls enter valid Emailid"
+				},
+				number:
+				{
+				required:"Must enter mobile number",
+				number:"Pls enter only digit",
+				minlength:"Pls enter min 10 digit",
+				maxlength:"pls enter max 10 digit"
+				}
+				
+		}
+		
+		
+		
+		
+});
+
+});
+</script>
+
+
+<title>
+Registration Page
+</title>
+</head>
+<body>
+<form id="form1" method="post" action="registration.html">
+<table border="1" align="center" style="background-color:gray">
+<tr>
+<td>Username </td>
+<td><input type="text" name="username" /></td>
+ </tr>
+ <tr>
+<td>Password </td>
+<td><input type="password" id="pass" name="password" /></td>
+ </tr>
+ <tr>
+<td>RePassword </td>
+<td><input type="password"  name="repassword" /></td>
+ </tr>
+ <tr>
+<td>Email id </td>
+<td><input type="text" name="email" /></td>
+ </tr>
+ <tr>
+<td>Mobile number  </td>
+<td><input type="text" name="number" /></td>
+ </tr>
+ <tr>
+<td>Age </td>
+<td><input type="text" name="age" /></td>
+ </tr>
+ <tr>
+<td>Qualification </td>
+<td><input type="text" name="quali" /></td>
+ </tr>
+  <tr>
+<td>Date </td>
+<td><input type="text" name="txtdate" /></td>
+ </tr>
+ <td></td>
+<td><input type="submit" value="submitbtn" name="Btn" /></td>
+ </tr>
+</table>
+</form>
+</body>
+
+</html>

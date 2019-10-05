@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+<title></title>
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<link rel="shortcut icon" type="images/x-icon" href="images/favicon.png">
+   <script type="text/javascript" src="jquery.min.js"></script>
+   <script>
+      $(document).ready(function(){
+         $("#submit").click(function(){
+              if ($('#name').val()=='')
+              {
+                  $(".errname").show().html("Please input name");
+                  return false;
+              }
+              }else {
+                
+              }
+              	
+              	  
+
+         });
+     });
+   </script>
+
+</head>
+
+<body>
+ <form>
+    <input type="txt" name="name" id="name">
+    <input type="submit" name="submit" id="submit"><br>
+    <em class="errname" style="color:red"><em>
+ </form>
+  
+ 
+</body>
+</html>

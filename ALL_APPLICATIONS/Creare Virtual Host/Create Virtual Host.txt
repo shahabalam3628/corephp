@@ -1,0 +1,19 @@
+Step 1:
+
+Goto This location And open "httpd-vhosts.conf" file  And Set 
+
+D:\xampp\apache\conf\extra\httpd-vhosts.conf
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "D:\xampp\htdocs\dev2"
+    ServerName local.dev2
+    ErrorLog "logs/dummy-host2.example.com-error.log"
+    CustomLog "logs/dummy-host2.example.com-access.log" common
+</VirtualHost>
+
+
+
+Step 2:
+
+C:\Windows\System32\drivers\etc
